@@ -1,0 +1,15 @@
+extends layouts/main-layout.pug
+
+block content
+    if !profileUser
+        span.userNotFound The page of this user hasn't been found! Check the url again.
+    else
+        script.
+            var profileUserId = '!{profileUser._id}';
+            var selectedTab = '!{selectedTab}';     
+        .tabsContainer 
+            +createTab("Following",`/profile/${profileUser.username}/following`, selectedTab != "followers")      
+            +createTab("Followers",`/profile/${profileUser.username}/followers`, selectedTab == "followers")                                                       
+        .resultsContainer
+block scripts
+    script(src="/js/follow.js")
