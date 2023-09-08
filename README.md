@@ -23,13 +23,13 @@ To run this project, you will need to have the following software installed:
 
 bash
 
-git clone https://github.com/your_username/node-twitter-clone.git
+git clone https://github.com/youssefsadouk/Social-Media-Web-App.git
 
     Install the dependencies:
 
 bash
 
-cd node-twitter-clone
+cd Social-Media-Web-App
 npm install
 
     Create a .env file in the root directory of the project and add the following environment variables:
@@ -45,7 +45,7 @@ sql
 
 npm start
 
-    Open your web browser and navigate to http://localhost:3000.
+    Open your web browser and navigate to http://localhost:3003.
 
 # How to Use
 
